@@ -4,8 +4,11 @@ import axios from "axios";
 
 export const generateImage = async (req, res) => {
     try {
-      const { userId, prompt } = req.body;
-      console.log("Received request with:", { userId, prompt });
+      const { prompt } = req.body;
+      
+      console.log("Received request with:", { prompt });
+      const userId=req.user.id;
+    
   
       const user = await userModel.findById(userId);
       if (!user || !prompt) {
