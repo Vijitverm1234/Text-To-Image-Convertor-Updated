@@ -40,9 +40,7 @@ function Footer() {
         <div className="flex flex-col">
           <h3 className="font-semibold text-gray-800 mb-3">Follow Us</h3>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <img src={assets.facebook_icon} alt="Facebook" className="w-7 hover:scale-110 transition-all duration-300" />
-            </a>
+            
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <img src={assets.instagram_icon} alt="Instagram" className="w-7 hover:scale-110 transition-all duration-300" />
             </a>
